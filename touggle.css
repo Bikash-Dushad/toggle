@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* scroll bar */
+.touggle{
+    height: 25px;
+    width:50px;
+    border-radius: 25px;
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+/* turn black and white mode on and off circle */
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 2.5px;
+    left: 1px;
+    transition: 0.4s;
+}
+
+.touggle.active .circle{
+    transform: translateX(28px);
+    
+}
+
+/* defining dark and light mode */
+body.dark-mode{
+    background-color: rgb(36, 35, 35);
+}
+
+body.light-mode{
+    background-color: rgb(232, 223, 223);
+}
+
+/* settting text */
+.text {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+}
+
+.text.on {
+    color: white;
+}
+
+
